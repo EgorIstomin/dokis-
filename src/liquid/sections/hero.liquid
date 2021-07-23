@@ -1,0 +1,53 @@
+{% render "hero" with { 
+    settings: section.settings, 
+    id: section.id
+} %}
+
+{% schema %} 
+  {
+      "name": "Hero", 
+      "settings": [
+        {    
+            "type": "text", 
+            "id": "heading", 
+            "label": "Заголовок", 
+            "default": "New Heading"
+        }, 
+        { 
+            "type": "text", 
+            "id": "copy", 
+            "label": "Подзаголовок (если необходим)",
+            "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        },
+        { 
+            "type": "text", 
+            "id": "link_url", 
+            "label": "Ссылка на что-нибудь", 
+            "default": "Перейти в каталог"
+        },
+        { 
+            "type": "text", 
+            "id": "link_text", 
+            "label": "Перейти в каталог [ТЕКСТ В КНОПКЕ]"
+        }, 
+        { 
+            "type": "image_picker", 
+            "id": "small_image", 
+            "label": "Small Image", 
+            "info": "Dimensions: 991х991"
+        }, 
+        { 
+            "type": "image_picker", 
+            "id": "large_image", 
+            "label": "Large Image"
+        }
+      ], 
+      "presets": [ 
+        { 
+            "name": "Главная", 
+            "category": "Главное фото с заголовком"
+        }
+      ]
+  }
+
+{% endschema %}

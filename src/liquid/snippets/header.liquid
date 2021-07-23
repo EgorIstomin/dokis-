@@ -1,0 +1,31 @@
+{% comment %}
+  Requires the folowing arguments: 
+
+  - settings
+{% endcomment %} 
+
+    <style> 
+    .logo-- { 
+        background-image: url({{ settings.logo | img_url: "master" }})
+    }
+    </style>
+ 
+<section class="header {{ id }}">  
+    <div class="container"> 
+        <div class="logo logo--"> 
+        </div> 
+        <li> 
+            <a href="#" class="menu">{{settings.menu_1}}</a>
+        </li>
+        <li> 
+            <a href="#">{{settings.menu_2}}</a>
+        </li>
+        <li> 
+            <a href="#">{{ settings.menu_3}}</a>
+        </li>
+        <li> 
+            <a href="#">{{ settings.menu_4}}</a>
+        </li>
+    </div> 
+
+</section>

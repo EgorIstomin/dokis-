@@ -1,0 +1,34 @@
+.photos_block { 
+    margin-top: 80px;
+    height: 500px;
+}
+.image_first { 
+    margin-left: auto; 
+    margin-right: auto;
+    height: 420px;
+    width: 305px;
+    border-radius: 10px;
+    background-size: cover; 
+}
+.up_section { 
+    display: flex;
+    justify-content: space-between; 
+    margin-right: auto;
+}
+.dialog_block { 
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: 80px;
+}
+.image_second { 
+    margin-left: auto; 
+    margin-right: auto;
+    height: 420px;
+    width: 305px;
+    border-radius: 10px;
+    background-size: cover; 
+}
+.down_section { 
+    display: flex;
+    justify-content: space-between; 
+}

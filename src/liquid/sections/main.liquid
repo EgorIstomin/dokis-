@@ -1,0 +1,31 @@
+{% render "main" with { 
+    settings: section.settings, 
+    id: section.id
+    }
+%}
+
+{% schema %} 
+  { 
+     "name": "Main", 
+     "settings": [ 
+     { 
+         "type": "text", 
+         "id": "main_menu_header", 
+         "label": "Заголовок", 
+         "default": "Наши товары"
+     }, 
+     { 
+         "type": "text", 
+         "id": "text_big_item", 
+         "label": "Текст внутри большого блока" 
+     }
+     ],
+     
+     "presets": [ 
+     { 
+         "name": "Гланый блог с каталогом", 
+         "category": "Каталог на главной странице"
+     }
+     ]
+    }
+{% endschema %}

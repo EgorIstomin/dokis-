@@ -1,0 +1,58 @@
+{% render "photos" with { 
+    settings: section.settings, 
+    id: section.id
+    }
+%}
+{% schema %} 
+  {
+      "name": "Photos", 
+      "settings": [
+        {    
+            "type": "text", 
+            "id": "dialog", 
+            "label": "Диалог", 
+            "default": "New Heading"
+        }, 
+        { 
+            "type": "text", 
+            "id": "dialog_2", 
+            "label": "Ответ на вопрос",
+            "default": "Lorem I"
+        },
+        { 
+            "type": "text", 
+            "id": "visa_text", 
+            "label": "Текст про Visa/Mastercard", 
+            "default": "Visa/Mastercard"
+        },
+        { 
+            "type": "image_picker", 
+            "id": "image_1", 
+            "label": "Первое фото", 
+            "info": "Dimensions: 991х991"
+        }, 
+        { 
+            "type": "image_picker", 
+            "id": "visa_img", 
+            "label": "Логотип VISA"
+        },
+        { 
+            "type": "image_picker", 
+            "id": "mastercard_img", 
+            "label": "Логотип Mastercard"
+        },
+        { 
+            "type": "image_picker", 
+            "id": "image_2", 
+            "label": "Второе фото (Снизу)"
+        }
+      ], 
+      "presets": [ 
+        { 
+            "name": "Блок с фотографиями", 
+            "category": "#5"
+        }
+      ]
+  }
+
+{% endschema %}

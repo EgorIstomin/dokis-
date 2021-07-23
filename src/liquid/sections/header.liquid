@@ -1,1 +1,39 @@
-{% render 'header' %}
+{% render 'header' with { 
+    settings: section.settings, 
+    id: section.id
+} %} 
+
+{% schema %} 
+  { 
+      "name": "Header", 
+      "settings": [ 
+      { 
+          "type": "text", 
+          "id": "menu_1", 
+          "label": "Первая строка в меню" 
+      },  
+      { 
+        "type": "text", 
+        "id": "menu_2", 
+        "label": "Вторая строка в меню" 
+    },  
+    { 
+        "type": "text", 
+        "id": "menu_3", 
+        "label": "Третья строка в меню" 
+    }, 
+    { 
+        "type": "text", 
+        "id": "menu_4", 
+        "label": "Четвертая строка в меню" 
+    },
+      { 
+          "type": "image_picker",
+          "id": "logo", 
+          "label": "Логотип"
+      }
+      ]
+  }
+
+  {% endschema %}
+

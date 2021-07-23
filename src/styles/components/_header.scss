@@ -1,0 +1,24 @@
+.container { 
+    display: flex;  
+    justify-content: flex-start;
+    height: 65px;
+} 
+.container li a { 
+    text-decoration: none;
+    color: #A67C7B;
+    font-size: 14px;
+    margin-left: 65px;
+}
+.container li { 
+    margin-top: 102px;
+    list-style-type: none;
+} 
+.logo-- { 
+    margin-left: 220px;
+    margin-right: 70px;
+    margin-top: 90px;
+    width: 100px; 
+    height: 30px; 
+    background-size: cover; 
+
+}

@@ -1,0 +1,30 @@
+
+ <style> 
+    .image_first { 
+        background-image: url({{ settings.image_1 | img_url: "master" }})
+    }
+    .image_second { 
+        background-image: url( {{ settings.image_2 | img_url: "master" }});
+    }
+    </style>
+
+<section class="photos_block"> 
+    <div class="up_section">
+        <div class="image_first"></div> 
+        <div class="dialog_block"> 
+            <h3>{{ settings.dialog }}</h3>
+            <h3> {{ settings.dialog_2 }}</h3>
+        </div>
+    </div>
+    <div class="down_section"> 
+        <div class="image_second"></div> 
+        <div class="dialog_block2"> 
+            <h3>{{ settings.visa_text }}</h3>
+            <div class="payment_block"> 
+                <div class="mastercard">{{ settings.mastercard_img}}</div>
+                <div class="visa">{{ settings.visa_img }} </div>
+            </div>
+        </div>
+    </div>
+
+</section>

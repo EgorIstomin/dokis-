@@ -1,0 +1,60 @@
+{% render "adv" with { 
+    settings: section.settings, 
+    id: section.id
+    }
+%}
+
+{% schema %}
+  { 
+      "name": "Adv", 
+      "settings": [ 
+      { 
+          "type": "text", 
+          "id": "adv_title", 
+          "label": "Заголовок в рекламном блоке",
+          "default": "Тестовый Заголовок"
+      }, 
+      { 
+        "type": "text", 
+        "id": "left_title", 
+        "label": "Левый заголовок в блоке",
+        "default": "Левый Заголовок"
+    }, 
+    { 
+        "type": "text", 
+        "id": "right_title", 
+        "label": "Правый заголовок в блоке",
+        "default": "Правый Заголовок"
+    }, 
+    { 
+        "type": "text", 
+        "id": "left_text", 
+        "label": "Левый текст в рекламном блоке",
+        "default": "Левый текст-подзаголовок"
+    }, 
+    { 
+        "type": "text", 
+        "id": "right_text", 
+        "label": "Правый текст в рекламном блоке",
+        "default": "Правый текст-подзаголовок"
+    }, 
+    { 
+        "type": "image_picker", 
+        "id": "icon_left", 
+        "label": "Иконка (Левая)"
+    }, 
+    { 
+        "type": "image_picker", 
+        "id": "icon_right", 
+        "label": "Иконка (Правая)"
+    }
+      ], 
+      "presets": [ 
+        { 
+            "name": "Блок с рекламой", 
+            "category": "Два блока с описанием качества"
+        }
+      ]
+  }
+
+{% endschema %}

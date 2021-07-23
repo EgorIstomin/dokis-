@@ -1,1 +1,10 @@
-@import './components/example';
+// Global 
+@import './global/global.scss'; 
+@import './global/variables.scss';
+
+// Components 
+@import './components/hero';
+@import './components/header';
+@import './components/_main';
+@import './components/_adv';
+@import './components/photos'; 
